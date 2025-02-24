@@ -29,7 +29,7 @@ const About = () => {
     <div className="min-h-screen w-screen" id="about">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <h2 className="font-general mb-8 text-sm uppercase md:text-[40px]">
-          Welcome to Allodium
+          Welcome to <b>Allodium</b>
         </h2>
 
         <AnimatedTitle containerClass="mt-5 !text-black text-center"
