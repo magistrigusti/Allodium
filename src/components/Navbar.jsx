@@ -24,17 +24,17 @@ const Navbar = () => {
       navContainerRef.current.classList.remove('floating-nav');
     } else if (currentScrollY > lastScrollY) {
       setIsNavVisible(false);
-      navContainerRef.current.classList.remove('floating-nav');
+      navContainerRef.current.classList.add('floating-nav');
     } else if (currentScrollY < lastScrollY) {
       setIsNavVisible(true);
       navContainerRef.current.classList.add('floating-nav');
     }
 
     setLastScrollY(currentScrollY);
-  }, [currentScrollY]);
+  }, [currentScrollY, lastScrollY]);
 
   useEffect(() => {
-    gsap.to(navContainerRef, {
+    gsap.to(navContainerRef.current, {
       y: isNavVisible ? 0 : -100,
       opacity: isNavVisible ? 1 : 0,
       duration: 0.2,
