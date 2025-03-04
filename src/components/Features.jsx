@@ -82,7 +82,7 @@ const Features = () => {
         <AllodTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
           <AllodCard
             src="videos/feature-1.mp4"
-            title={<>Allo<>d</>ium</>}
+            title={<>Allo<b>d</b>ium</>}
             description="A cross-platform metaame app, turning your activities across Web2 and Web3 games into a reward adventure."
             isCommingSoon
           />
